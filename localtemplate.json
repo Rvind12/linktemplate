@@ -139,7 +139,7 @@
         "apiVersion": "2019-07-01",
         "location": "[resourceGroup().location]",
         "dependsOn": [
-            "[resourceId('Microsoft.Storage/storageAccounts', toLower('mynewstoraz'))]",
+            "[resourceId('Microsoft.Storage/storageAccounts', toLower('mynewstoraz012'))]",
             "[resourceId('Microsoft.Network/networkInterfaces', 'mynewvm-NetworkInterface')]"
         ],
         "tags": {
@@ -177,7 +177,7 @@
 			"diagnosticsProfile": {
                 "bootDiagnostics": {
                     "enabled": true,
-                    "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', toLower('mynewstoraz'))).primaryEndpoints.blob]"
+                    "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', toLower('mynewstoraz012'))).primaryEndpoints.blob]"
                 }
             }
         }
