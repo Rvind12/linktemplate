@@ -12,9 +12,6 @@
         }
     },
     "functions": [],
-    "variables": {
-        
-    },
     "resources": [
         {
       "name": "linkedTemplate",
