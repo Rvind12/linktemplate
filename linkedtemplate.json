@@ -8,7 +8,7 @@
                 "description": "description"
             },
             // "defaultValue": "[toLower (concat (uniqueString (subscription (). id), 'ayush'))]"
-            "defaultValue": "storageaccountaravind"
+            "defaultValue": "mynewstoraz012"
         },
 
         "storagelocation": {
