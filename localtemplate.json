@@ -1,7 +1,16 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {},
+    "parameters": {
+        "storageAccountName": {
+            "type": "string",
+            "defaultValue": "mynewstoraz012",
+            "metadata": {
+                "description": "description"
+            }
+
+        }
+    },
     "functions": [],
     "variables": {
         
@@ -16,6 +25,14 @@
         "mode": "Incremental",
         "templateLink": {
           "relativePath": "linkedtemplate.json"
+        },
+        "parameters": {
+          "storageAccountName": {
+            "value": "[parameters('storageAccountName')]"
+          },
+          "location": {
+            "value": "westus"
+          }
         }
         }
       
