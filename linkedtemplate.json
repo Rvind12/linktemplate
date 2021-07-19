@@ -36,7 +36,7 @@
       {
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2019-06-01",
-        "name": "[parameters('storageAccountName')]",
+        "name": "mynewstoraz012",
         "location": "[parameters('location')]",
         "sku": {
           "name": "[parameters('storageSKU')]"
