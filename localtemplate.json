@@ -131,7 +131,7 @@
         "apiVersion": "2019-07-01",
         "location": "[resourceGroup().location]",
         "dependsOn": [
-            "[resourceId('Microsoft.Storage/storageAccounts', toLower('teststorage89'))]",
+          //  "[resourceId('Microsoft.Storage/storageAccounts', toLower('teststorage89'))]",
             "[resourceId('Microsoft.Network/networkInterfaces', 'mynewvm-NetworkInterface12')]"
         ],
         "tags": {
@@ -165,13 +165,13 @@
                         "id": "[resourceId('Microsoft.Network/networkInterfaces', 'mynewvm-NetworkInterface12')]"
                     }
                 ]
-            },
-			"diagnosticsProfile": {
+            }
+			/*"diagnosticsProfile": {
                 "bootDiagnostics": {
                     "enabled": true,
                     "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', toLower('teststorage89'))).primaryEndpoints.blob]"
                 }
-            }
+            }*/
         }
     }],
     "outputs": {
