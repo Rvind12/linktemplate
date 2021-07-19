@@ -7,7 +7,7 @@
             "metadata": {
                 "description": "description"
             },
-            // "defaultValue": "[toLower (concat (uniqueString (subscription (). id), 'ayush'))]"
+           
             "defaultValue": "mynewstoraz012"
         },
 
@@ -40,7 +40,7 @@
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2019-06-01",
         "tags": {
-            "displayName": "storageaccountaravind"
+            "displayName": "mynewstoraz012"
         },
         "location": "[parameters ('storagelocation')]",
         "kind": "StorageV2",
