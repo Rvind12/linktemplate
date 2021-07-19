@@ -18,7 +18,7 @@
         },
         "parameters": {
           "storageAccountName": {
-            "value": "teststorage89"
+            "value": "teststorage1234"
           },
           "location": {
             "value": "westus"
